@@ -1,0 +1,16 @@
+[package]
+name = "libpcap-src"
+version = "1.10.1"
+description = "Static build of libpcap"
+edition = "2021"
+license = "BSD-3-Clause"
+build = "build.rs"
+authors = ["Jason Ish"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+fs_extra = "1.1.0"
+walkdir = "2"
+filetime = "0.2"
