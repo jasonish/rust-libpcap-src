@@ -60,6 +60,8 @@ fn main() {
         .arg("./configure")
         .arg(&format!("--prefix={}", prefix))
         .arg("--disable-shared")
+        .arg("--disable-rdma")
+        .arg("--without-dpdk")
         .current_dir(&build_dir)
         .spawn()
         .expect("./configure failed")
